@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header{
+    background-color: #907c66;
+    height: 100px;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.topnav .con_search .search {
+    border-radius: 15px;
+    width: 600px;
+    height: 40px;
+    border: solid 3px #907c66;
+    text-indent: 10px;
+}
+
+ 
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+}
+
+#header img{
+    width: 80px;
+    padding: 10px;
+}
+
+.fa-cart-arrow-down{
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+.detail_drink{
+    margin-top: 10px;
+    width: 100%;
+    height: 750px;
+}
+
+.detail_drink .detail_text{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.detail_drink .detail_text .detail_container{
+    padding-left: 200px;
+}
+
+.detail_drink .detail_text .detail_container .detail_title{
+    font-size: 40px;
+    color: #907c66;
+}
+
+.detail_size{
+    margin-left: 200px;
+    margin-bottom: 20px;
+    border: solid 2px #907c66;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    color: #907c66;
+}
+
+
+.detail_drink .detail_text .detail_content{
+    padding-left: 200px;
+    line-height: 30px;
+    color: #907c66;
+}
+
+.detail_drink .detail_text .detail_price{
+    padding-left: 200px;
+    font-size: 25px;
+    color: #e64954;
+}
+
+.detail_drink .detail_text .quantity{
+    padding-left: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.detail_drink .detail_text .quantity p{
+    float: left;
+}
+
+.detail_drink .detail_text .quantity input{
+    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #907c66;
+    border-radius: 10px;
+    border: solid 2px #907c66;
+}
+
+ .topping{
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    align-items: center;
+    height: 100px;
+}
+
+.detail_drink .detail_text .topping_check{
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    padding: 10px;
+    align-items: center;
+    height: 50px;
+}
+
+.detail_drink .detail_text .topping_check input{
+    background-color: aqua;
+}
+
+.detail_drink .detail_text label{
+    width: 60px;
+    font-size: 12px;
+}
+
+ .topping img{
+    float: left;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 0.15);
+}
+
+.detail_drink .detail_text .topping img:hover{
+    float: left;
+    width: 150px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 0.15);
+}
+
+.detail_drink .detail_img{
+    float: left;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+
+.detail_text .order{
+    text-align: center;
+    margin-left: 200px;
+    color: white;
+    margin-top: 30px;
+    background-color: #907c66;
+    border-radius: 50px;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.fa-cart-plus{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.detail_text .order a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.detail_text .order:hover{
+    background-color: #675849;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #907c66;
+    padding: 20px;
+}
+footer img{
+    width: 150px;
+}
