@@ -1,6 +1,6 @@
 ﻿<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>  
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +30,7 @@
             </p>
             <p class="price">28 K</p>
             <a class="add_topping" href="detail?id=1">
-                Chi tiết
+                 Mua hàng
                 <i class="fa fa-angle-double-right"></i>
             </a></br>    
         </div>
@@ -45,7 +45,7 @@
             </p>
             <p class="price">${trasua} K</p>
             <a class="add_topping" href="detail?id=2">
-                Chi tiết 
+                 Mua hàng
                 <i class="fa fa-angle-double-right"></i>
             </a></br>
         </div>
@@ -60,7 +60,7 @@
             </p>
             <p class="price">28 K</p>
             <a class="add_topping" href="detail?id=3">
-                Chi tiết 
+                 Mua hàng
                 <i class="fa fa-angle-double-right"></i>
             </a></br>
         </div>
@@ -75,7 +75,7 @@
             </p>
             <p class="price">25 K</p>
             <a class="add_topping" href="detail?id=4">
-                Chi tiết 
+                Mua hàng
                 <i class="fa fa-angle-double-right"></i>
             </a></br>
         </div>

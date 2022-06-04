@@ -17,7 +17,6 @@
             <div class="detail_text">
                 <div class="detail_container">
                     <div><p class="detail_size">Tên sản phẩm: ${sanpham}</p>
-                        <p class="detail_price">Giá: ${price}/ly, Size S</p>
                         <p class="detail_title">Các lựa chọn</p>
                     </div>
                     <form method="post" action="cart">

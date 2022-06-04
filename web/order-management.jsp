@@ -62,7 +62,7 @@
                     <div class="form-group">
                         <label>Tình trạng: </label>
                         <select style="border: solid 2px #907c66; padding: 10px 10px; border-radius: 10px; " name="tinhtrang" class="form-select" aria-label="Default select example">
-                            <c:if test="${cart.status==0}">
+                            <c:if test="${cart.status==0 ||cart.status==null}">
                                 <option value="0" selected="">Chưa giao</option>
                                 <option value="1">Đã giao</option>
                             </c:if>
@@ -110,7 +110,8 @@
                 <table style=" margin-top: 30px;" class="table table-striped table-hover">
                     <thead>
                         <tr>
-                             <th>Id</th>
+                            <th>TT</th>
+                            <th>Cartid</th>
                             <th>Thông tin đồ uống</th>
                             <th>Giá</th>
                             <th>Ngày mua</th>
@@ -125,6 +126,7 @@
                         <c:forEach items="${listOrder}" var="o">
                             <tr>
                                 <td>${o.itemid}</td>
+                                 <td>${o.cartid}</td>
                                 <td>${o.productname}, ${o.size}, topping:${o.topping}</td>
                                 <td>${o.price}</td>
                                 <td>${o.buydate}</td>

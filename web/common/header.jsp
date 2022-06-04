@@ -6,12 +6,8 @@
         <div class="con_search">
             <input class="search" type="search" placeholder="Tìm kiếm">
         </div>
-        <c:if test="${sessionScope.qcart!=null}">
-         <a href="show-cart"><i class="fas fa-cart-arrow-down"></i>Giỏ hàng(${sessionScope.qcart})</a>
-        </c:if>
-        <c:if test="${sessionScope.qcart==null}">
-         <a href="show-cart"><i class="fas fa-cart-arrow-down"></i>Giỏ hàng</a>
-        </c:if>
+        <a href="show-cart"><i class="fas fa-cart-arrow-down"></i>Giỏ hàng</a>
+        <a href="price-table.jsp">Bảng giá</a>
         <a href="order-management"><i style="font-size: 20px; padding-right: 10px;" class="fas fa-list"></i>Danh sách đơn hàng</a>
     </div>
 </div>

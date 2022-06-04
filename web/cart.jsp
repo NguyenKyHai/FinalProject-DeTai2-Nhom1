@@ -15,34 +15,7 @@
     </head>
     <body>
         <%@include file="common/header.jsp" %>
-        <div style="width: auto; padding-top: 100px;" class="topping">
-            <div style="stroke: #907c66; padding: 10px; border-radius: 20px;">
-                <img style="margin-right: 15px; width: 60px;" src="images/tranchau.png">
-                <label style="padding: 0px;">Trân châu (t1)</label>
-                <label style="padding: 0px;">Giá: 5K</label>
-            </div>
-            <div style="stroke: #907c66; padding: 10px; border-radius: 20px;">
-                <img style="margin-right: 15px; width: 60px;" src="images/thachtraicay.jpg">
-                <label style="padding: 0px;">Thạch trái cây (t2)</label>
-                <label style="padding: 0px;">Giá: 5K<label>
-            </div>
-            <div style="stroke: #907c66; padding: 10px; border-radius: 20px;">
-                <img style="margin-right: 15px; width: 60px;" src="images/raucau.png">
-                <label style="padding: 0px;">Rau câu (t3)</label>
-                <label style="padding: 0px;">Giá: 5K</label>
-            </div>
-            <div style="stroke: #907c66; padding: 10px; border-radius: 20px;">
-                <img style="margin-right: 15px; width: 60px;" src="images/flan.png">
-                <label style="padding: 0px;">Flan (t4)</label>
-                <label style="padding: 0px;">Giá: 10K</label>
-            </div>
-            <div style="stroke: #907c66; padding: 10px; border-radius: 20px;">
-                <img style="margin-right: 15px; width: 60px;" src="images/kemphomai.jpg">
-                <label style="padding: 0px;">Kem Cheese (t5)</label>
-                <label style="padding: 0px;">Giá: 10K</label>
-            </div>
-        </div>
-
+       
         <div class="cart_drink">
             <div class="shopping-cart">
                 <div class="px-4 px-lg-0">
