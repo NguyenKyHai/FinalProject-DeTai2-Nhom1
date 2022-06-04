@@ -10,9 +10,13 @@
         <link rel="stylesheet" href="templates/cart.css">
         <title>Order</title>
     </head>
-    <body>
-        <%@include file="common/header.jsp" %>
-        <h1>Đặt hàng thành công</h1>
-        <a href="home">Về trang chủ</a>
+   <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 0px; margin: 0px; height: 100%; padding-top: 200px;">
+         
+       <div style="display: flex; align-items: center; justify-content: center;">
+            <h1>Đặt hàng thành công</h1>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <a style="border: none; text-decoration: none; color: white; background-color: #907c66; padding: 10px 20px; border-radius: 20px; margin-top: 20px;" href="home">Về trang chủ</a>
+        </div>
     </body>
 </html>

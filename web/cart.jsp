@@ -155,6 +155,6 @@ crossorigin="anonymous"></script>
 <script src="templates/functionWeb.js"></script>
 </body>
 <footer>
-    <img src="image/logo.png">
+    <img src="images/logo.png">
 </footer>
 </html>

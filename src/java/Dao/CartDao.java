@@ -128,7 +128,7 @@ public class CartDao {
     }
 
     public List<Order> getListOrder() {
-        String query = "select * from  cart c join lineitem l on c.cartid=l.cartid";
+        String query = "select * from  cart c join lineitem l on c.cartid=l.cartid order by l.id";
         List<Order> list = new ArrayList<>();
         try {
             con = DBConnection.getInstance().getDBConnection();

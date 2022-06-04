@@ -1,4 +1,4 @@
-﻿<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@
     <body>
 
         <h2 style="text-align: center;  padding-bottom: 30px;" class="title-main">Quản lý đơn hàng</h2>
-        <div>
+        <div style="padding: 0px 70px">
             <a style="text-decoration: 
                none; background-color: #907c66; border-radius: 30px; color: white; padding: 10px 20px;" 
                class="return" href="home">Về trang chủ</a>
@@ -27,7 +27,7 @@
         <div class="edit-content">
             <form action="edit-order" method="post">
                 <div class="modal-header">
-                    <h4>Chỉnh sửa thông tin đơn hàng</h4>
+                    <h4 style="text-align: center;">Chỉnh sửa thông tin đơn hàng</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
@@ -61,7 +61,7 @@
                     </div>
                     <div class="form-group">
                         <label>Tình trạng: </label>
-                        <select name="tinhtrang" class="form-select" aria-label="Default select example">
+                        <select style="border: solid 2px #907c66; padding: 10px 10px; border-radius: 10px; " name="tinhtrang" class="form-select" aria-label="Default select example">
                             <c:if test="${cart.status==0}">
                                 <option value="0" selected="">Chưa giao</option>
                                 <option value="1">Đã giao</option>
@@ -75,7 +75,7 @@
                     <div><p style="color: green;">${message}</p></div>
                 </div>
                 <div class="modal-footer">
-                    <input type="submit" class="btn-save" value="Lưu">
+                    <input style="border: none; background-color: #907c66; color: white; padding: 10px 20px; border-radius: 10px; " type="submit" class="btn-save" value="Lưu">
                 </div>
             </form>
         </div>
@@ -83,7 +83,7 @@
             <form action="sort-price" method="get">
                 <div class="form-group">
                     <label>Sắp xếp theo giá: </label>
-                    <select name="sort" class="form-select" aria-label="Default select example">
+                    <select style="border: solid 2px #907c66; padding: 10px 10px; border-radius: 10px; " name="sort" class="form-select" aria-label="Default select example">
                         <c:if test="${sort==0 || sort==null}">
                         <option value="0" selected="">Bình thường</option>
                         <option value="1" >Tăng dần</option>
@@ -94,7 +94,7 @@
                         <option value="1" selected="" >Tăng dần</option>
                         <option value="-1">Giảm dần</option>
                         </c:if>
-                          <c:if test="${sort==2}">
+                          <c:if test="${sort==-1}">
                         <option value="0" >Bình thường</option>
                         <option value="1" >Tăng dần</option>
                         <option value="-1" selected="">Giảm dần</option>
@@ -103,7 +103,7 @@
                 </div>
 <!--                <div><p style="color: green;">{message}</p></div>-->
                 <div class="">
-                    <input type="submit" class="btn-save" value="Sắp xếp">
+                    <input style="border: none; background-color: #907c66; color: white; padding: 10px 10px; border-radius: 10px; " type="submit" class="btn-save" value="Sắp xếp">
                 </div>
             </form>
             <div class="table-wrapper">
