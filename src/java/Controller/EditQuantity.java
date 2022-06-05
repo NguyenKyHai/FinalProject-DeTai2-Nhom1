@@ -30,9 +30,9 @@ public class EditQuantity extends HttpServlet {
         IChain chain1 = new AddNumber();
         IChain chain2 = new SubNumber();
         chain1.setNextChain(chain2);
-                for (int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < list.size(); i++) {
             if (list.get(i).getProductcode() == Integer.parseInt(id)) {
-                if (list.get(i).getQuantity() == 1&& type.equals("sub")) {
+                if (list.get(i).getQuantity() == 1 && type.equals("sub")) {
                     list.remove(i);
                 } else {
                     Number a = new Number(list.get(i).getQuantity(), 1, type);
