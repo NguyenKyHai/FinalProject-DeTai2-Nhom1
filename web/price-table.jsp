@@ -55,12 +55,12 @@
         </table>
 
         <table border="1">  
-            <tr><th>Ảnh minh họa</th><th>Tên Topping</th><th>Giá</th></tr>  
-            <tr><td><img src="images/tranchau.png"></td><td>Trân châu</td><td>5K</td></tr>  
-            <tr><td><img src="images/thachtraicay.jpg"></td><td>Thạch trái cây</td><td>5K</td></tr>  
-            <tr><td><img src="images/raucau.png"></td><td>Râu câu</td><td>5K</td></tr>  
-            <tr><td><img src="images/flan.png"></td><td>Bánh Flan</td><td>10K</td></tr>  
-            <tr><td><img src="images/kemphomai.jpg"></td><td>Kem Cheese</td><td>10K</td></tr> 
+            <tr><th>Hình ảnh</th><th>Tên Topping</th><th>Giá</th></tr>  
+            <tr><td><img src="images/tranchau.png"></td><td>Trân châu (t1)</td><td>5K</td></tr>  
+            <tr><td><img src="images/thachtraicay.jpg"></td><td>Thạch trái cây (t2)</td><td>5K</td></tr>  
+            <tr><td><img src="images/raucau.png"></td><td>Râu câu (t3)</td><td>5K </td></tr>  
+            <tr><td><img src="images/flan.png"></td><td>Bánh Flan (t4)</td><td>10K </td></tr>  
+            <tr><td><img src="images/kemphomai.jpg"></td><td>Kem Cheese (t5)</td><td>10K </td></tr> 
         </table>
     </div>  
 </body>
