@@ -7,7 +7,7 @@
 2. Sử dụng IDE khác
   - Cách 1: Xem hướng dẫn chạy code từ Netbeans sang IDE đang sử dụng trên Internet.
   - Cách 2: Tạo project thủ công.     
-&nbsp Copy tất cả file trong thư mục **src/java** và các file trong thư mục **web** dán vào.
+            Copy tất cả file trong thư mục **src/java** và các file trong thư mục **web** dán vào.
 ## Một số lưu ý khi tạo project thủ công:
 - Project sử dụng công nghệ Servlet và JSP nên có file cấu hình web.xml (xem thư mục web/WEB-INF).    
 - Có một số thư viện jar như:  jstl và jdbc: posgresql (thư mục lib), cần thêm các thư viện này vào để đảm bảo project chạy được.    
