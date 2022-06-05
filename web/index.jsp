@@ -31,7 +31,7 @@
                 </a></br>    
             </div>
             <div class="item">
-                <img class="img_item" src="${sessionScope.trasua_img}">
+                <img class="img_item" src="images/trasua.png">
                 <div class="container">
                     <p class="tittle">Trà sữa</p>
                     <p class="size">(size: S)</p>
@@ -39,7 +39,7 @@
                 <p class="content">
                     Trà sữa là loại trà kết hợp giữa trà và sữa. Nhắc đến trà sữa, chúng ta nghĩ ngay đến những ly trà sữa mát lạnh với những hạt trân châu dẻo ngọt.
                 </p>
-                <p class="price">${trasua} K</p>
+                <p class="price">24 K</p>
                 <a class="add_topping" href="detail?id=2">
                     Mua hàng
                     <i class="fa fa-angle-double-right"></i>

@@ -1,6 +1,10 @@
 package Dao;
 
 import DataConnection.DBConnection;
+import DesignPattern.ChainOfResponsibility.AddNumber;
+import DesignPattern.ChainOfResponsibility.IChain;
+import DesignPattern.ChainOfResponsibility.SubNumber;
+import DesignPattern.ChainOfResponsibility.Number;
 import Model.Cart;
 import Model.LineItem;
 import Service.StringHandle;
@@ -20,13 +24,20 @@ public class LineItemDao {
     PreparedStatement ps = null;
     ResultSet rs = null;
 
-    private int sum;
+    private int sum = 0;
     private int ship;
 
     public int getSum(List<LineItem> list) {
+        IChain chain1 = new AddNumber();
+        IChain chain2 = new SubNumber();
+        chain1.setNextChain(chain2);
+
         list.forEach(c -> {
-            sum = sum + c.getQuantity() * c.getPrice();
+            //sum = sum + c.getQuantity() * c.getPrice();
+            Number a = new Number(sum, c.getQuantity() * c.getPrice(), "add");
+            sum = chain1.calculator(a);
         });
+
         return sum;
     }
 
@@ -94,17 +105,17 @@ public class LineItemDao {
         }
         return list;
     }
-    
-     public LineItem getLineItemId(int id) {
-                String query = "select * from lineitem where id=?";
-                LineItem item=null;
+
+    public LineItem getLineItemId(int id) {
+        String query = "select * from lineitem where id=?";
+        LineItem item = null;
         try {
             con = DBConnection.getInstance().getDBConnection();
             ps = con.prepareStatement(query);
             ps.setInt(1, id);
             rs = ps.executeQuery();
             while (rs.next()) {
-                item=new LineItem(rs.getInt(1),
+                item = new LineItem(rs.getInt(1),
                         rs.getString(2),
                         rs.getInt(3),
                         rs.getInt(4),
